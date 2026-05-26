@@ -1,16 +1,19 @@
+// gradle编译脚本配置
 buildscript {
+    // 插件仓库下载源
     repositories {
         mavenLocal()
         maven { url "https://maven.aliyun.com/repository/public/" }
     }
 }
 
+// 项目依赖插件
 plugins {
     id 'java'
     // https://spring.io/projects/spring-boot
-    id 'org.springframework.boot' version '3.3.4'
+    id 'org.springframework.boot' version '3.5.14'
     // https://github.com/spring-gradle-plugins/dependency-management-plugin
-    id 'io.spring.dependency-management' version '1.1.6'
+    id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'net.hifor.demo'
@@ -20,6 +23,7 @@ java {
     sourceCompatibility = JavaVersion.VERSION_21
 }
 
+// 项目依赖包的仓库下载源
 repositories {
     mavenLocal()
     maven { url "https://maven.aliyun.com/repository/public/" }
