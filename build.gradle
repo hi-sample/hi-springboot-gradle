@@ -17,7 +17,7 @@ plugins {
 }
 
 group = 'net.hifor.demo'
-version = 'main-20240829'
+version = 'main-20260526'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
